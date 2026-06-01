@@ -8,7 +8,7 @@ from .users import add_user  # Import the database helper
 import random
 import time 
 
-log = get_logger(__name__)
+log = get_logger(name)
 
 @Bot.on_message(filters.private)
 async def on_private_message(client, message):
@@ -69,7 +69,7 @@ I stay awake — watching your website.**
         ],
         [
             InlineKeyboardButton("📚 Help", callback_data="help"),
-            InlineKeyboardButton("📢 Channel", url="https://t.me/Wizard_Bots"),
+            InlineKeyboardButton("📢 Channel", url="https://t.me/TeraBox_Support_Anuj_Bot"),
         ],
     ]
     if message.from_user.id in client.setting["ADMINS"]:
@@ -95,4 +95,3 @@ async def status(client, message):
             ]
         ])
     )
-
