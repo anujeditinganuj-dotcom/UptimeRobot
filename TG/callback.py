@@ -67,7 +67,7 @@ I stay awake — watching your website.**
       ],
       [
           InlineKeyboardButton("📚 Help", callback_data="help"),
-          InlineKeyboardButton("📢 Channel", url="https://t.me/Wizard_Bots"),
+          InlineKeyboardButton("📢 Channel", url="https://t.me/anujbyedit"),
       ],
       [
           InlineKeyboardButton(" Close ", callback_data="close"),
@@ -121,7 +121,7 @@ __➪ Check logs anytime using the /status command.__
       ],
       [
           InlineKeyboardButton("🏠 Home", callback_data="start"),
-          InlineKeyboardButton("📢 Channel", url="https://t.me/Wizard_Bots"),
+          InlineKeyboardButton("📢 Channel", url="https://t.me/anujbyedit"),
       ],
       [
           InlineKeyboardButton(" Close ", callback_data="close"),
@@ -227,7 +227,7 @@ async def stats_callback(client, query):
             [
                 InlineKeyboardButton("📚 Help", callback_data="help"),
                 InlineKeyboardButton("📢 Channel",
-                                     url="https://t.me/Wizard_Bots"),
+                                     url="https://t.me/anujbyedit"),
             ], [
                 InlineKeyboardButton(" Close ", callback_data="close"),
             ]]
@@ -476,7 +476,7 @@ async def info_callback(client, query):
 <b>Response Status:</b> <code>{info.get('response_status', '0')} </code>
 <b>Check Time:</b> <code>{check_time_} sec</code>
 
-<blockquote><b>Make By: @Wizard_Bots</b></blockquote>"""
+<blockquote><b>Made By: @anujbyedit</b></blockquote>"""
   try:
     await query.answer()
   except:
