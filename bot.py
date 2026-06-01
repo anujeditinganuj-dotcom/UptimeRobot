@@ -7,8 +7,8 @@ import sys
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 import asyncio
 
-API_ID = int(os.environ.get("API_ID", "34446649"))
-API_HASH = os.environ.get("API_HASH", "8dc570c08d8e35e88fb9bfc73c65d7fa")
+API_ID = int(os.environ.get("API_ID", "20432885"))
+API_HASH = os.environ.get("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8040657764:AAGFwTyS5ds9KsNyOtwaBLTnyb--oaCV7zE")
 
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0")
@@ -76,13 +76,13 @@ def get_logger(name: str = "app") -> logging.Logger:
   return logger
 
 
-log = get_logger(name)
+log = get_logger(__name__)
 
 
 class UpTimeRoBot(Client):
 
-  def init(self):
-    super().init("bot",
+  def __init__(self):
+    super().__init__("bot",
                      api_id=API_ID,
                      api_hash=API_HASH,
                      bot_token=BOT_TOKEN,
@@ -119,7 +119,7 @@ class UpTimeRoBot(Client):
     message_task = None
     callback_task = None
 
-try:
+    try:
       # Create tasks
       message_task = asyncio.create_task(
           self.listen(user_id=user_id, filters=msg_filter,
@@ -193,8 +193,7 @@ PICS = (
     "https://img1.teletype.in/files/0a/1b/0a1b5f17-095c-4826-84c8-39a8b9b9deef.jpeg",
     "https://img4.teletype.in/files/f5/94/f594fbe2-b52d-489a-86c9-23b2f2dbe4d7.jpeg",
     "https://img3.teletype.in/files/e3/76/e376be29-065b-4c1a-986d-aba69d08208f.jpeg",
-
-"https://img1.teletype.in/files/8f/e6/8fe67878-43a3-4b3d-851f-63727a6a2b0b.jpeg",
+    "https://img1.teletype.in/files/8f/e6/8fe67878-43a3-4b3d-851f-63727a6a2b0b.jpeg",
     "https://img2.teletype.in/files/1a/d3/1ad3fa24-c3bf-4ca8-a7ef-a79286b1e37c.jpeg",
     "https://img1.teletype.in/files/80/1a/801a77ad-bf05-4d7a-96c9-2b1cde09d04f.jpeg",
     "https://img4.teletype.in/files/f4/b0/f4b007ec-fc8c-49fd-a1fb-b0d02985120a.jpeg",
@@ -229,8 +228,7 @@ PICS = (
     "https://ik.imagekit.io/jbxs2z512/21418.jpg?updatedAt=1751107452919",
     "https://ik.imagekit.io/jbxs2z512/mythical-dragon-beast-anime-style_23-2151112835.jpg?updatedAt=1751107574210",
     "https://ik.imagekit.io/jbxs2z512/halloween-scene-illustration-anime-style_23-2151794288.jpg?updatedAt=1751107676806",
-
-"https://ik.imagekit.io/jbxs2z512/5823589-2920x1640-desktop-hd-boy-programmer-wallpaper-image.jpg_id=1726666227?updatedAt=1751107911063",
+    "https://ik.imagekit.io/jbxs2z512/5823589-2920x1640-desktop-hd-boy-programmer-wallpaper-image.jpg_id=1726666227?updatedAt=1751107911063",
     "https://ik.imagekit.io/jbxs2z512/thumbbig-1345576.webp?updatedAt=1751108065802",
     "https://ik.imagekit.io/jbxs2z512/thumb-440-1340473.webp?updatedAt=1751108159970",
     "https://ik.imagekit.io/jbxs2z512/wp3084738.jpg?updatedAt=1751108326075",
@@ -269,8 +267,7 @@ PICS = (
     "https://ik.imagekit.io/jbxs2z512/wp15082622.webp?updatedAt=1751628578344",
     "https://ik.imagekit.io/jbxs2z512/e618b0d2a9518326722d6483569a94c6.jpg?updatedAt=1757316947948",
     "https://ik.imagekit.io/jbxs2z512/6222c23f673d9d6b86cf759a440935d9.jpg?updatedAt=1757317031249",
-
-"https://ik.imagekit.io/jbxs2z512/b322fad3ae2e550b5e9a0cb1d2c78311.jpg?updatedAt=1757317116796",
+    "https://ik.imagekit.io/jbxs2z512/b322fad3ae2e550b5e9a0cb1d2c78311.jpg?updatedAt=1757317116796",
     "https://ik.imagekit.io/jbxs2z512/0a7f44752689424fd901b220aa5c5516.jpg?updatedAt=1757317197691",
     "https://ik.imagekit.io/jbxs2z512/c4567ce2326aa09a4b33b0ff21e9d1ef.jpg?updatedAt=1757317301147",
     "https://ik.imagekit.io/jbxs2z512/a6a2b0fe748ec78ead3c3ac85b1472a8.jpg?updatedAt=1757317366150",
