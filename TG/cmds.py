@@ -8,8 +8,7 @@ from .users import add_user  # Import the database helper
 import random
 import time 
 
-log = get_logger(name)
-
+log = get_logger(__name__)
 @Bot.on_message(filters.private)
 async def on_private_message(client, message):
     # Log the user into broadcast database automatically
