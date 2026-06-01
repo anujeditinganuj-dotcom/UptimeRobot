@@ -113,7 +113,7 @@ __➪ You can monitor multiple sites at once.__
 
 __➪ Check logs anytime using the /status command.__
 
-**👨‍💻 Developer: @Wizard_bots**</blockquote>"""
+**👨‍💻 Developer: @anujbyedit**</blockquote>"""
   button = [
       [
           InlineKeyboardButton("🌐 Check Uptime", callback_data="check_uptime"),
