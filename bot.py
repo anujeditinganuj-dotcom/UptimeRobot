@@ -14,8 +14,8 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "8040657764:AAGFwTyS5ds9KsNyOtwaBLTnyb--
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "Anujedit")
 
-OWNER = int(os.environ.get("OWNER", "7892805795"))
-ADMINS = os.environ.get("ADMINS", "7892805795")
+OWNER = int(os.environ.get("OWNER", "8729304171"))
+ADMINS = os.environ.get("ADMINS", "8729304171")
 ADMINS = [int(admin) for admin in (ADMINS).split(" ")]
 ADMINS.append(OWNER)
 
